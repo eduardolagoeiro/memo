@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/jogos.css">
+    <link rel="stylesheet" type="text/css" href="css/cartas.css">
+    <link href="https://fonts.googleapis.com/css?family=Kavoon" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Kavoon" rel="stylesheet"> 
+    <title>Memo</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <main>
+        <div class="menu">
+            <h1>Memo</h1>
+            <p>Bem-vindo ao jogo da memória.</p>
+            <ul class="jogos">
+                <li id="gumball" class="jogo">Gumball</li>
+                <li id="hora-de-aventura" class="jogo">Hora de Aventura</li>
+                <li id="steven-universo" class="jogo">Steven Universo</li>
+            </ul>
+            <label>Quantas Cartas?
+                <input type="number" min="4" max="20">
+            </label>
+            <div class="botao-div">
+                <button class="jogar">Jogar</button>
+                <p>Escolha um tema!</p>
+            </div>
+        </div>
+        <div class="cartas">
+            <span class="carta nojogo carta-single"></span>
+        </div>
+    </main>
+    <footer>
+        <p>Criado por <a href="https://www.github.com/eduardolagoeiro">Edu</a> e <a href="https://www.facebook.com/Francy.shimizu">Fran</a></p>
+    </footer>
+    <script src="js/jogo.js"></script>
+    <script src="js/carta.js"></script>
+    <script src="js/embara.js"></script>
+</body> 
+</html>

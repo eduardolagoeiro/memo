@@ -1,0 +1,100 @@
+.jogos{
+    display: table;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 80%;
+    margin: auto;
+}
+
+
+.jogo{
+    display: table-cell;
+    vertical-align: middle;
+    width: 33.3%;
+    text-align: center;
+    height: 60px;
+    font-size: 100%;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Kavoon', cursive;
+    text-transform: uppercase;
+    background-color: white;
+    background-position: center;
+}
+
+.jogo:first-child{
+    border-radius: 10px 0 0 10px;
+    border-left-width: 2px;
+    background-position: left;
+}
+
+.jogo:last-child{
+    border-radius: 0 10px 10px 0;
+    border-right-width: 2px;
+    background-position: right;
+}
+
+.jogo:hover{
+    cursor: pointer;
+}
+
+#gumball{
+    color: white;
+    background-color: #48BBE8;
+    background-image: url(../img/gumball.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#gumball:hover{
+    color: #48BBE8;
+    background-color: white;
+    background-image: none;
+}
+
+#steven-universo{
+    color: white;
+    background-color: #FF4962;
+    background-image: url(../img/steve.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#steven-universo:hover{
+    color: #FF4962;
+    background-color: white;
+    background-image: none;
+}
+
+#hora-de-aventura{
+    color: white;
+    background-color: #F9CC17;
+    background-image: url(../img/hora-de-aventura.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#hora-de-aventura:hover{
+    color: #F9CC17;
+    background-color: white;
+    background-image: none;
+}
+
+.active{
+    border-color: orange;
+    border-width: 2px;
+}
+
+.active:after{
+    content: "\2605";
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    color: orange;
+    font-size: 200%;
+}

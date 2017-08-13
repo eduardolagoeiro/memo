@@ -1,4 +1,5 @@
 var cartas = document.querySelector('.cartas');
+
 cartas.addEventListener("click", function(event){
     var alvo = event.target;
     if(!alvo.classList.contains("apertada")){
@@ -50,11 +51,6 @@ function funcaoGirar(alvo, idAlvo, pulo, numIdAlvo){
     alvo.classList.add('gira');
     var tema = alvo.classList[1];
     tema = tema.substr(6,tema.length);
-    /*
-    var style = window.getComputedStyle(alvo);
-    var execTime = style.getPropertyValue('transition-duration');
-    execTime = parseInt(execTime[0]);
-    */
     setTimeout(function(){
         alvo.classList.remove('nojogo');
         if(numIdAlvo > pulo){

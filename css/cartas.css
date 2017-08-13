@@ -17,7 +17,6 @@
         box-shadow: 10px 10px 5px #888888;
         position: relative;
         transition: visible 1s;
-        background-color: aquamarine;
 }    
 
 @media screen and (min-width: 460px) {    
@@ -57,7 +56,7 @@
 }
 
 .cartas-gumball .carta{
-    background: url(../img/carta-gumball.png), aquamarine;
+    background: url(../img/carta-gumball.png);
     background-image: url(../img/carta-gumball.png), linear-gradient(45deg, rgb(65, 160, 218) 20%, #a2d49f 30%, #a2d49f 40%, #c7c12f 50%, #c7c12f 60%, #f26247 70%, #f26247 80%, #ec2045 90%, #ec2045 90%);
     background-position: center;
     background-size: contain;

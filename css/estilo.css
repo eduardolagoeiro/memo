@@ -82,6 +82,7 @@ p{
     margin-bottom: 10px;
 }
 
+#numcartas-input:hover,
 .jogar:hover{
     box-shadow: 0 0 20px aliceblue;
     cursor:pointer;
@@ -107,4 +108,9 @@ footer p{
 a{
     text-decoration: none;
     color: inherit;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }

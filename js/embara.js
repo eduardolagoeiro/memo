@@ -1,7 +1,7 @@
 var jogar = document.querySelector('.jogar');
 
 jogar.addEventListener("click", function(event){
-    var num = document.querySelector('input').value;
+    var num = document.querySelector('#numcartas-input').value;
     if(num > 20){
         alert('No máximo 20 cartas u.u');
         return;

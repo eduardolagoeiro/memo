@@ -34,7 +34,7 @@ cartas.addEventListener("click", function(event){
                     setTimeout(function(){
                         alert('Você venceu!');
                         setTimeout(function(){
-                            cartas.innerHTML = "<span class='carta nojogo carta-single'></span>";
+                            cartas.innerHTML = "<span class='carta nojogo carta-single'></span><!----><span class='carta nojogo carta-single'></span>";
                             document.querySelector('.menu').style.display = '';
                             document.querySelector('footer').style.display = '';
                         }, 300);

@@ -21,17 +21,19 @@ main{
     box-sizing: border-box;
 }
 
-h1, p{
+h1, h2, p{
     text-align: center;
 }
 
 h1{
-    font-size: 250%;
+    font-size: 400%;
     padding: 15px;
     text-transform: uppercase;
 }
 
-h1, .jogar{
+h1,
+#numcartas-input,
+.jogar{
     font-family: 'Cinzel Decorative', cursive;
     font-weight: bold;
 }
@@ -40,35 +42,43 @@ p{
     margin-bottom: 15px;
 }
 
-label{
-    text-align: center;
-    width: 160px;
-    margin: 10px auto;
-    display: block;
+#numcartas-label,
+p{
+    font-size: 200%;
 }
 
-input{
-    margin-top: 5px;
-    width: 3em;
+#numcartas-input,
+#numcartas-label,
+.jogar{
+    display: inline;
 }
 
-.botao-div{
-    text-align: center;
-    margin: 0 auto;
-    width: 120px;
-}
-
+#numcartas-input,
 .jogar{
     font-size: 170%;
-    padding: 0;
-    width: 100%;
     height: 45px;
-    display: block;
+    box-shadow: 5px 5px 2px #888888;
+    height: 45px;
     text-align: center;
     background-color: darkblue;
     color: white;
+}
+
+#numcartas-input{
+    width: 2em;
+    padding-right: 5px;
+}
+
+.opcoes{
+    text-align: center;
+    margin: 10px auto;
+    width: 80%;
+}
+
+.jogar{
+    padding: 0;
+    width: 100px;
     border: black 0 solid;
-    box-shadow: 5px 5px 2px #888888;
     margin-bottom: 10px;
 }
 
@@ -91,6 +101,7 @@ footer{
 
 footer p{
     padding-top: 10px;
+    font-size: 100%;
 }
 
 a{

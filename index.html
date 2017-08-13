@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/cartas.css">
     <link href="https://fonts.googleapis.com/css?family=Kavoon" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Kavoon" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Memo</title>
     <meta charset="utf-8">
 </head>
@@ -14,22 +15,33 @@
     <main>
         <div class="menu">
             <h1>Memo</h1>
-            <p>Bem-vindo ao jogo da memória.</p>
+            <h2>Bem-vindo ao jogo da memória.</h2>
+            <p>Escolha um tema!</p>
             <ul class="jogos">
                 <li id="gumball" class="jogo">Gumball</li>
                 <li id="hora-de-aventura" class="jogo">Hora de Aventura</li>
                 <li id="steven-universo" class="jogo">Steven Universo</li>
             </ul>
-            <label>Quantas Cartas?
-                <input type="number" min="4" max="20">
-            </label>
-            <div class="botao-div">
+            <div class="opcoes">
+                <label id="numcartas-label" for="numcartas-input">Quantas Cartas?
+                </label>
+                <select id="numcartas-input">
+                    <option value="4">4</option>
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                    <option value="14">14</option>
+                    <option value="16">16</option>
+                    <option value="18">18</option>
+                    <option value="20">20</option>
+                </select>
                 <button class="jogar">Jogar</button>
-                <p>Escolha um tema!</p>
             </div>
         </div>
         <div class="cartas">
-            <span class="carta nojogo carta-single"></span>
+            <span class="carta nojogo carta-single"></span><!--
+            --><span class="carta nojogo carta-single"></span>
         </div>
     </main>
     <footer>

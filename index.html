@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" type="text/css" href="css/jogos.css">
@@ -13,6 +14,12 @@
 </head>
 <body>
     <main>
+        <div class="warning temawarning off">
+            <h4>Escolha um tema!</h4>
+        </div>
+        <div class="warning vitoriawarning off">
+            <h4>Voce venceu!</h4>
+        </div>
         <div class="menu">
             <h1>Memo</h1>
             <h2>Bem-vindo ao jogo da memória.</h2>
@@ -39,7 +46,7 @@
                 <button class="jogar">Jogar</button>
             </div>
         </div>
-        <div class="cartas">
+        <div class="cartas" id="0">
             <span class="carta nojogo carta-single"></span><!--
             --><span class="carta nojogo carta-single"></span>
         </div>

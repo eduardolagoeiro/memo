@@ -1,4 +1,9 @@
 var jogar = document.querySelector('.jogar');
+var temawarning = document.querySelector('.temawarning');
+
+temawarning.addEventListener("click", function(){
+    temawarning.classList.add('off');
+});
 
 jogar.addEventListener("click", function(event){
     var num = document.querySelector('#numcartas-input').value;
@@ -16,7 +21,7 @@ jogar.addEventListener("click", function(event){
     }
     var checarEscolhaTipo = embaralhamento(num);
     if(!checarEscolhaTipo){
-        alert('Escolha um Tema!');
+        temawarning.classList.remove('off');
     }else{
         document.querySelector('.menu').style.display = 'none';
         document.querySelector('footer').style.display = 'none';
